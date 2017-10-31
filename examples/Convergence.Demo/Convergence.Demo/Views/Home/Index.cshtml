@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="title is-2">Universal Chuck Norris Joke Generator</h2>
+
+@{ 
+    RequestFlags.SetStateFlag();
+    var state = @Html.WaitScript("Components.ChuckNorris.Initializer(15, edgeDone);", "init_chuck_norris");
+}
+
+@Html.ReactComponentWithJsonProps("Components.ChuckNorris.App", state.ToString())

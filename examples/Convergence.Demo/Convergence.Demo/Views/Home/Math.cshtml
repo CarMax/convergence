@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Addition";
+}
+
+<h2 class="title is-2">Node Addition</h2>
+
+<div class="subtitle is-5">Controller</div>
+<em>@Model</em>
+
+<br /><br />
+
+<div class="subtitle is-5">View</div>
+@* Run scripts from the view *@ 
+<em>@Html.RunScript("'5 + 2 = ' + (5 + 2)", "math")</em>
+
+
