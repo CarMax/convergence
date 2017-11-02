@@ -2,9 +2,9 @@
 
 A fusion of .NET and Node.js that support script evaluation and rendering universal react components.
 
-The core Convergence package is library agnostic and can be easily extended to work with Angular, Vue, ect.
+The core Convergence package is library agnostic and can be easily extended to work with Angular, Vue, etc.
 
-The React Convergence package extends the core library with React specific rendering helpers.
+The React Convergence package extends the core library with React specific environments and helpers.
 
 Convergence uses the [edge](https://github.com/tjanczuk/edge) open source project as it's script engine and is optimized for performance.
 
@@ -14,7 +14,7 @@ Core
 
 `install-package Convergence`
 
-React for Mvc
+React for Mvc (.NET Framework)
 
 `install-package Convergence.React`
 
@@ -29,7 +29,7 @@ Render Universal React Components
     // Enable React Hydration 
     RequestFlags.SetStateFlag();
     // Prepare Redux State
-    var state = @Html.WaitScript("Components.Name.Init(param, edgeDone);", "init");
+    var state = @Html.WaitScript("Components.Name.Init(parms, edgeDone);", "init");
 }
 
 @Html.ReactComponentWithJsonProps("Components.Name.App", state.ToString())
@@ -53,7 +53,7 @@ Hydrate all of your components when after the DOM has loaded
 
 Convergence isolates its runtime environment by request via Dependency Injection.
 
-The first step is to configure your node environment register it with your container:
+The first step is to configure your node environment and register it with your container:
 
 ```csharp
 // create a custom node environment
@@ -102,7 +102,7 @@ Or from your views with our MVC Helpers...
 <div>@Html.RunScript("'5 + 2 = ' + (5 + 2)", "math")</div>
 ```
 
-> For more details checkout the [examples](examples/).
+> For more details checkout the [examples folder](examples/).
 
 ## Version
 
