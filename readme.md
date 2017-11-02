@@ -14,7 +14,7 @@ Core
 
 `install-package Convergence`
 
-React for Mvc5
+React for Mvc (.NET Framework)
 
 `install-package Convergence.React`
 
