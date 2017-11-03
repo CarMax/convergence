@@ -6,7 +6,7 @@ The core Convergence package is library agnostic and can be easily extended to w
 
 The React Convergence package extends the core library with React specific environments and helpers.
 
-Convergence uses the [edge](https://github.com/tjanczuk/edge) open source project as it's script engine and is optimized for performance.
+Convergence uses the [edge](https://github.com/tjanczuk/edge) open source project as its script engine and is optimized for performance.
 
 ## Installation
 
