@@ -23,7 +23,7 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.17.0",
+    "axios": "^0.18.1",
     "https-proxy-agent": "^2.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
