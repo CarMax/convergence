@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.18.1",
-    "https-proxy-agent": "^2.2.0",
+    "https-proxy-agent": "^2.2.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.1",
     "react-redux": "^5.0.6",
